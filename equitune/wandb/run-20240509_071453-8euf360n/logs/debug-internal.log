@@ -1,0 +1,826 @@
+2024-05-09 07:14:58,531 INFO    StreamThr :1694492 [internal.py:wandb_internal():86] W&B internal server running at pid: 1694492, started at: 2024-05-09 07:14:58.529977
+2024-05-09 07:14:58,533 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status
+2024-05-09 07:14:58,535 INFO    WriterThread:1694492 [datastore.py:open_for_write():87] open: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/run-8euf360n.wandb
+2024-05-09 07:14:58,538 DEBUG   SenderThread:1694492 [sender.py:send():379] send: header
+2024-05-09 07:14:58,538 DEBUG   SenderThread:1694492 [sender.py:send():379] send: run
+2024-05-09 07:14:58,713 INFO    SenderThread:1694492 [dir_watcher.py:__init__():211] watching files in: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files
+2024-05-09 07:14:58,713 INFO    SenderThread:1694492 [sender.py:_start_run_threads():1124] run started: 8euf360n with start time 1715238897.647036
+2024-05-09 07:14:58,730 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: check_version
+2024-05-09 07:14:58,731 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: check_version
+2024-05-09 07:14:58,835 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: run_start
+2024-05-09 07:14:58,837 DEBUG   HandlerThread:1694492 [system_info.py:__init__():26] System info init
+2024-05-09 07:14:58,837 DEBUG   HandlerThread:1694492 [system_info.py:__init__():41] System info init done
+2024-05-09 07:14:58,837 INFO    HandlerThread:1694492 [system_monitor.py:start():194] Starting system monitor
+2024-05-09 07:14:58,838 INFO    SystemMonitor:1694492 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-09 07:14:58,839 INFO    HandlerThread:1694492 [system_monitor.py:probe():214] Collecting system info
+2024-05-09 07:14:58,840 INFO    SystemMonitor:1694492 [interfaces.py:start():190] Started cpu monitoring
+2024-05-09 07:14:58,841 INFO    SystemMonitor:1694492 [interfaces.py:start():190] Started disk monitoring
+2024-05-09 07:14:58,842 INFO    SystemMonitor:1694492 [interfaces.py:start():190] Started gpu monitoring
+2024-05-09 07:14:58,842 INFO    SystemMonitor:1694492 [interfaces.py:start():190] Started memory monitoring
+2024-05-09 07:14:58,843 INFO    SystemMonitor:1694492 [interfaces.py:start():190] Started network monitoring
+2024-05-09 07:14:58,914 DEBUG   HandlerThread:1694492 [system_info.py:probe():150] Probing system
+2024-05-09 07:14:58,915 DEBUG   HandlerThread:1694492 [gitlib.py:_init_repo():56] git repository is invalid
+2024-05-09 07:14:58,915 DEBUG   HandlerThread:1694492 [system_info.py:probe():198] Probing system done
+2024-05-09 07:14:58,915 DEBUG   HandlerThread:1694492 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-169-generic-x86_64-with-glibc2.31', 'python': '3.11.8', 'heartbeatAt': '2024-05-09T07:14:58.915171', 'startedAt': '2024-05-09T07:14:53.870161', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'ironman', 'username': 'aj3051', 'executable': '/home/aj3051/anaconda3/envs/backpack/bin/python', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 2.177468749999999, 'min': 1500.0, 'max': 2500.0}, 'cpu_freq_per_core': [{'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.708, 'min': 1500.0, 'max': 2500.0}, {'current': 3.351, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.346, 'min': 1500.0, 'max': 2500.0}, {'current': 1.954, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.346, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 3.348, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.718, 'min': 1500.0, 'max': 2500.0}, {'current': 1.485, 'min': 1500.0, 'max': 2500.0}, {'current': 3.344, 'min': 1500.0, 'max': 2500.0}, {'current': 3.344, 'min': 1500.0, 'max': 2500.0}, {'current': 1.483, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.347, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.348, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.345, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.472, 'min': 1500.0, 'max': 2500.0}, {'current': 3.346, 'min': 1500.0, 'max': 2500.0}, {'current': 1.48, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.347, 'min': 1500.0, 'max': 2500.0}, {'current': 3.352, 'min': 1500.0, 'max': 2500.0}, {'current': 3.344, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.35, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.35, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.343, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.339, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.34, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.905, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 3.346, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.347, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.346, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.347, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 1.485, 'min': 1500.0, 'max': 2500.0}, {'current': 1.495, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.347, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.343, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.344, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.346, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.486, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.353, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 3.344, 'min': 1500.0, 'max': 2500.0}, {'current': 3.35, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.338, 'min': 1500.0, 'max': 2500.0}, {'current': 1.485, 'min': 1500.0, 'max': 2500.0}, {'current': 3.338, 'min': 1500.0, 'max': 2500.0}, {'current': 1.486, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.349, 'min': 1500.0, 'max': 2500.0}, {'current': 1.486, 'min': 1500.0, 'max': 2500.0}, {'current': 3.34, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 3.35, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 1.488, 'min': 1500.0, 'max': 2500.0}, {'current': 1.487, 'min': 1500.0, 'max': 2500.0}, {'current': 3.342, 'min': 1500.0, 'max': 2500.0}], 'disk': {'/': {'total': 97.87200164794922, 'used': 27.889144897460938}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 251.79236602783203}}
+2024-05-09 07:14:58,915 INFO    HandlerThread:1694492 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-09 07:14:58,915 INFO    HandlerThread:1694492 [system_monitor.py:probe():227] Publishing system info
+2024-05-09 07:14:58,916 DEBUG   HandlerThread:1694492 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-09 07:14:59,715 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_created():271] file/dir created: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/conda-environment.yaml
+2024-05-09 07:15:05,717 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/conda-environment.yaml
+2024-05-09 07:15:05,861 DEBUG   HandlerThread:1694492 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-09 07:15:05,864 INFO    HandlerThread:1694492 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-09 07:15:05,864 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:05,865 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-09 07:15:05,866 DEBUG   SenderThread:1694492 [sender.py:send():379] send: files
+2024-05-09 07:15:05,867 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-09 07:15:06,160 INFO    wandb-upload_0:1694492 [upload_job.py:push():131] Uploaded file /tmp/tmpud4gpg01wandb/fk7hks40-wandb-metadata.json
+2024-05-09 07:15:06,239 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-09 07:15:06,240 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: python_packages
+2024-05-09 07:15:06,241 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:15:06,242 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:15:06,245 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:15:06,404 DEBUG   SenderThread:1694492 [sender.py:send():379] send: telemetry
+2024-05-09 07:15:06,718 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_created():271] file/dir created: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/requirements.txt
+2024-05-09 07:15:06,719 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_created():271] file/dir created: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-metadata.json
+2024-05-09 07:15:09,405 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:14,406 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:19,407 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:21,240 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:15:21,242 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:15:21,242 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:15:25,292 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:30,297 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:30,734 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/config.yaml
+2024-05-09 07:15:35,376 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:36,240 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:15:36,241 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:15:36,281 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:15:41,291 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:46,293 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:51,241 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:15:51,242 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:15:51,243 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:15:51,324 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:56,325 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:15:58,843 DEBUG   SystemMonitor:1694492 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-09 07:15:58,848 DEBUG   SenderThread:1694492 [sender.py:send():379] send: stats
+2024-05-09 07:16:01,851 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:06,241 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:16:06,243 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:16:06,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:16:07,398 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:12,399 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:17,400 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:21,241 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:16:21,242 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:16:21,285 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:16:23,400 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:28,401 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:28,851 DEBUG   SenderThread:1694492 [sender.py:send():379] send: stats
+2024-05-09 07:16:33,854 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:36,242 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:16:36,243 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:16:36,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:16:39,349 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:44,351 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:49,352 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:51,242 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:16:51,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:16:51,243 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:16:54,376 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:16:58,854 DEBUG   SenderThread:1694492 [sender.py:send():379] send: stats
+2024-05-09 07:16:59,856 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:04,858 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:06,242 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:17:06,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:17:06,285 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:17:10,392 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:15,393 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:20,394 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:21,242 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:17:21,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:17:21,245 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:17:25,399 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:28,858 DEBUG   SenderThread:1694492 [sender.py:send():379] send: stats
+2024-05-09 07:17:30,860 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:35,862 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:36,242 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:17:36,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:17:36,244 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:17:41,328 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:46,329 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:51,242 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:17:51,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:17:51,285 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:17:51,389 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:56,390 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:17:58,860 DEBUG   SenderThread:1694492 [sender.py:send():379] send: stats
+2024-05-09 07:18:01,862 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:06,243 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:18:06,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:18:06,245 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:18:07,406 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:12,408 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:17,409 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:21,242 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:18:21,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:18:21,246 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:18:23,231 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:23,827 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_created():271] file/dir created: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/output.log
+2024-05-09 07:18:25,828 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/output.log
+2024-05-09 07:18:26,578 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:26,579 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:26,580 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:26,581 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:26,829 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_created():271] file/dir created: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:28,582 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:28,862 DEBUG   SenderThread:1694492 [sender.py:send():379] send: stats
+2024-05-09 07:18:28,874 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:28,875 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:28,876 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:28,876 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:29,171 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:29,172 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:29,172 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:29,173 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:29,447 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:29,448 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:29,449 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:29,449 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:29,631 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:29,632 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:29,632 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:29,632 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:29,830 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:29,868 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:29,868 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:29,869 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:29,869 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:30,161 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:30,162 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:30,162 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:30,163 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:30,440 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:30,441 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:30,441 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:30,442 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:30,628 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:30,629 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:30,630 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:30,630 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:30,782 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:30,783 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:30,783 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:30,783 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:30,831 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:30,968 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:30,969 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:30,969 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:30,970 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:31,131 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:31,132 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:31,132 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:31,132 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:31,319 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:31,320 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:31,320 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:31,320 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:31,561 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:31,561 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:31,562 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:31,562 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:31,831 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:31,868 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:31,869 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:31,869 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:31,869 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:32,202 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:32,203 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:32,203 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:32,203 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:32,422 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:32,422 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:32,422 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:32,423 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:32,674 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:32,675 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:32,675 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:32,675 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:32,832 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:32,985 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:32,985 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:32,985 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:32,986 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:33,338 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:33,338 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:33,339 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:33,339 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:33,660 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:33,660 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:33,661 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:33,661 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:33,661 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:33,832 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:33,921 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:33,922 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:33,922 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:33,923 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:34,181 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:34,182 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:34,182 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:34,183 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:34,334 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:34,335 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:34,335 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:34,335 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:34,550 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:34,551 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:34,551 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:34,551 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:34,832 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:34,832 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:34,832 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:34,833 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:34,833 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:35,098 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:35,098 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:35,099 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:35,099 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:35,305 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:35,305 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:35,305 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:35,306 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:35,607 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:35,607 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:35,608 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:35,608 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:35,834 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:35,921 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:35,922 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:35,922 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:35,922 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:36,243 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:18:36,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:18:36,245 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:18:36,245 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:36,366 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:36,367 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:36,368 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:36,674 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:36,674 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:36,675 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:36,675 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:36,834 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:36,959 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:36,960 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:36,960 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:36,961 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:37,180 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:37,181 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:37,181 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:37,182 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:37,494 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:37,495 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:37,495 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:37,495 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:37,751 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:37,752 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:37,752 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:37,752 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:37,835 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:38,110 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:38,111 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:38,111 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:38,112 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:38,521 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:38,522 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:38,523 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:38,523 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:38,760 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:38,761 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:38,762 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:38,762 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:38,763 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:38,836 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:38,946 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:38,947 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:38,947 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:38,947 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:39,141 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:39,142 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:39,143 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:39,143 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:39,406 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:39,407 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:39,407 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:39,407 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:39,752 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:39,753 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:39,753 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:39,754 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:39,836 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:40,107 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:40,107 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:40,108 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:40,108 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:40,412 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:40,413 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:40,414 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:40,414 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:40,626 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:40,627 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:40,627 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:40,627 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:40,837 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:40,840 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:40,841 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:40,841 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:40,842 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:41,110 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:41,111 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:41,111 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:41,111 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:41,351 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:41,352 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:41,352 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:41,352 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:41,611 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:41,612 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:41,613 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:41,613 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:41,837 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:41,844 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:41,845 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:41,845 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:41,846 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:42,206 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:42,207 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:42,207 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:42,207 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:42,632 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:42,633 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:42,633 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:42,634 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:42,838 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:42,952 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:42,952 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:42,953 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:42,953 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:43,258 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:43,258 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:43,259 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:43,259 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:43,485 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:43,486 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:43,486 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:43,487 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:43,785 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:43,786 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:43,786 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:43,786 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:43,787 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:43,838 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:44,225 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:44,225 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:44,225 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:44,226 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:44,559 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:44,559 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:44,560 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:44,560 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:44,775 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:44,776 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:44,776 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:44,777 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:44,839 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:45,043 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:45,044 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:45,044 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:45,044 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:45,220 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:45,221 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:45,221 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:45,221 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:45,431 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:45,432 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:45,432 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:45,434 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:45,707 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:45,707 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:45,707 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:45,708 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:45,839 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:45,974 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:45,974 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:45,975 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:45,975 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:46,108 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:46,109 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:46,109 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:46,109 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:46,262 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:46,263 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:46,263 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:46,263 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:46,452 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:46,452 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:46,452 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:46,453 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:46,706 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:46,706 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:46,707 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:46,707 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:46,840 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:47,017 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:47,018 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:47,018 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:47,019 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:47,269 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:47,270 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:47,270 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:47,270 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:47,512 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:47,512 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:47,513 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:47,513 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:47,746 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:47,747 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:47,747 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:47,747 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:47,840 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:48,063 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:48,064 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:48,064 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:48,064 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:48,402 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:48,402 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:48,403 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:48,403 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:48,725 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:48,726 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:48,726 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:48,727 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:48,841 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:48,894 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:48,895 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:48,895 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:48,895 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:48,896 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:49,105 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:49,106 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:49,106 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:49,106 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:49,312 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:49,313 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:49,313 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:49,314 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:49,539 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:49,540 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:49,540 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:49,540 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:49,698 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:49,698 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:49,698 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:49,699 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:49,841 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:49,944 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:49,944 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:49,944 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:49,945 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:50,252 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:50,253 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:50,253 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:50,253 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:50,580 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:50,581 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:50,581 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:50,581 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:50,828 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:50,828 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:50,828 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:50,829 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:50,842 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:51,147 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:51,147 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:51,147 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:51,148 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:51,243 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:18:51,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:18:51,245 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:18:51,480 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:51,480 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:51,481 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:51,481 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:51,665 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:51,666 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:51,666 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:51,666 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:51,842 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:51,851 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:51,851 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:51,852 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:51,852 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:52,111 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:52,111 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:52,112 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:52,112 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:52,398 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:52,399 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:52,399 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:52,400 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:52,731 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:52,731 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:52,732 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:52,732 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:52,843 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:53,101 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:53,101 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:53,102 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:53,102 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:53,540 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:53,541 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:53,541 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:53,542 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:53,786 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:53,786 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:53,786 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:53,787 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:53,843 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:54,038 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:54,038 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:54,038 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:54,038 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:54,038 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:54,290 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:54,290 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:54,290 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:54,290 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:54,586 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:54,587 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:54,587 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:54,587 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:54,844 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:54,995 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:54,995 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:54,995 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:54,996 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:55,328 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:55,328 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:55,328 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:55,328 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:55,579 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:55,580 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:55,580 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:55,581 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:55,844 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:55,853 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:55,853 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:55,853 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:55,853 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:56,200 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:56,209 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:56,209 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:56,209 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:56,485 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:56,486 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:56,486 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:56,486 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:56,774 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:56,775 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:56,775 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:56,776 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:56,845 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:57,068 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:57,069 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:57,069 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:57,069 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:57,353 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:57,354 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:57,354 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:57,355 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:57,533 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:57,533 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:57,534 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:57,534 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:57,760 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:57,760 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:57,761 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:57,761 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:57,845 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:57,989 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:57,990 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:57,990 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:57,990 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:58,273 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:58,273 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:58,273 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:58,274 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:58,697 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:58,698 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:58,698 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:58,698 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:58,845 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:18:58,864 DEBUG   SenderThread:1694492 [sender.py:send():379] send: stats
+2024-05-09 07:18:59,066 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:59,067 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:59,067 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:59,068 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:18:59,068 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:59,299 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:59,300 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:59,300 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:59,301 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:59,540 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:59,541 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:59,542 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:59,542 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:59,816 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:18:59,816 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:18:59,817 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:18:59,817 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:18:59,846 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:00,137 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:00,138 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:00,138 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:00,139 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:00,484 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:00,485 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:00,485 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:00,486 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:00,846 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:00,973 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:00,974 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:00,974 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:00,975 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:01,399 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:01,400 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:01,400 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:01,400 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:01,730 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:01,730 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:01,730 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:01,731 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:01,847 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:01,923 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:01,923 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:01,923 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:01,924 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:02,179 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:02,179 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:02,179 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:02,180 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:02,381 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:02,381 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:02,382 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:02,382 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:02,614 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:02,615 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:02,615 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:02,616 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:02,847 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:02,940 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:02,940 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:02,940 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:02,941 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:03,187 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:03,188 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:03,188 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:03,188 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:03,408 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:03,409 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:03,409 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:03,409 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:03,580 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:03,580 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:03,580 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:03,581 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:03,784 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:03,785 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:03,785 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:03,785 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:03,848 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:03,998 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:03,999 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:03,999 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:03,999 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:04,223 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:04,224 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:04,224 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:04,224 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:19:04,224 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:04,411 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:04,411 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:04,411 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:04,412 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:04,566 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:04,566 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:04,567 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:04,567 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:04,758 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:04,759 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:04,759 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:04,759 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:04,848 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:05,108 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:05,109 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:05,109 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:05,110 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:05,457 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:05,458 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:05,458 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:05,459 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:05,727 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:05,728 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:05,728 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:05,728 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:05,849 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:06,045 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:06,046 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:06,046 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:06,046 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:06,243 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-09 07:19:06,243 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: stop_status
+2024-05-09 07:19:06,245 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-09 07:19:06,378 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:06,387 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:06,387 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:06,388 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:06,637 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:06,638 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:06,638 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:06,639 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:06,850 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:06,902 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:06,903 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:06,903 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:06,904 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:07,122 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:07,123 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:07,123 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:07,124 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:07,490 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:07,491 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:07,491 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:07,491 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:07,842 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:07,843 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:07,843 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:07,843 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:07,850 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:08,153 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:08,154 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:08,154 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:08,155 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:08,631 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:08,632 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:08,632 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:08,633 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:08,850 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:08,981 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:08,982 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:08,982 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:08,982 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:09,251 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:09,252 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:09,252 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:09,252 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:19:09,253 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:09,498 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:09,499 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:09,499 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:09,499 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:09,851 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:09,860 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:09,862 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:09,862 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:09,862 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:10,182 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:10,183 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:10,183 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:10,184 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:10,414 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:10,416 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:10,416 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:10,416 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:10,642 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:10,643 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:10,643 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:10,644 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:10,852 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:10,890 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:10,891 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:10,891 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:10,892 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:11,112 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-09 07:19:11,113 DEBUG   SenderThread:1694492 [sender.py:send():379] send: history
+2024-05-09 07:19:11,114 DEBUG   SenderThread:1694492 [sender.py:send_request():406] send_request: summary_record
+2024-05-09 07:19:11,114 INFO    SenderThread:1694492 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-09 07:19:11,852 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/wandb-summary.json
+2024-05-09 07:19:13,854 INFO    Thread-24 :1694492 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/rcs/aj3051/equitune/wandb/run-20240509_071453-8euf360n/files/output.log
+2024-05-09 07:19:14,324 DEBUG   HandlerThread:1694492 [handler.py:handle_request():146] handle_request: status_report
+2024-05-09 07:19:18,955 INFO    memory    :1694492 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-05-09 07:19:18,957 DEBUG   SystemMonitor:1694492 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-09 07:19:18,958 DEBUG   SystemMonitor:1694492 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-09 07:19:18,962 DEBUG   SenderThread:1694492 [sender.py:send():379] send: stats
+2024-05-09 07:19:19,918 INFO    MainThread:1694492 [internal.py:handle_exit():76] Internal process exited
+2024-05-09 07:19:19,918 INFO    MainThread:1694492 [internal.py:handle_exit():76] Internal process exited

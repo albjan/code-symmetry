@@ -1,0 +1,47 @@
+2024-05-09 09:21:49,072 INFO    MainThread:2695856 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-05-09 09:21:49,072 INFO    MainThread:2695856 [wandb_setup.py:_flush():76] Configure stats pid to 2695856
+2024-05-09 09:21:49,072 INFO    MainThread:2695856 [wandb_setup.py:_flush():76] Loading settings from /home/aj3051/.config/wandb/settings
+2024-05-09 09:21:49,072 INFO    MainThread:2695856 [wandb_setup.py:_flush():76] Loading settings from /local/rcs/aj3051/equitune/wandb/settings
+2024-05-09 09:21:49,072 INFO    MainThread:2695856 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-09 09:21:49,072 INFO    MainThread:2695856 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-09 09:21:49,072 INFO    MainThread:2695856 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/local/rcs/aj3051/equitune/train.py', 'program': '/local/rcs/aj3051/equitune/train.py'}
+2024-05-09 09:21:49,073 INFO    MainThread:2695856 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-09 09:21:49,073 INFO    MainThread:2695856 [wandb_init.py:_log_setup():521] Logging user logs to /local/rcs/aj3051/equitune/wandb/run-20240509_092149-jxrcuylj/logs/debug.log
+2024-05-09 09:21:49,073 INFO    MainThread:2695856 [wandb_init.py:_log_setup():522] Logging internal logs to /local/rcs/aj3051/equitune/wandb/run-20240509_092149-jxrcuylj/logs/debug-internal.log
+2024-05-09 09:21:49,073 INFO    MainThread:2695856 [wandb_init.py:init():561] calling init triggers
+2024-05-09 09:21:49,073 INFO    MainThread:2695856 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'learning_rate': 1e-05, 'epochs': 4}
+2024-05-09 09:21:49,073 INFO    MainThread:2695856 [wandb_init.py:init():611] starting backend
+2024-05-09 09:21:49,073 INFO    MainThread:2695856 [wandb_init.py:init():615] setting up manager
+2024-05-09 09:21:49,075 INFO    MainThread:2695856 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-09 09:21:49,078 INFO    MainThread:2695856 [wandb_init.py:init():623] backend started and connected
+2024-05-09 09:21:49,082 INFO    MainThread:2695856 [wandb_init.py:init():715] updated telemetry
+2024-05-09 09:21:49,082 INFO    MainThread:2695856 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-05-09 09:21:49,282 INFO    MainThread:2695856 [wandb_run.py:_on_init():2357] communicating current version
+2024-05-09 09:21:49,370 INFO    MainThread:2695856 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-09 09:21:49,371 INFO    MainThread:2695856 [wandb_init.py:init():799] starting run threads in backend
+2024-05-09 09:21:52,943 WARNING MainThread:2695856 [wandb_init.py:init():1203] interrupted
+Traceback (most recent call last):
+  File "/home/aj3051/anaconda3/envs/backpack/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    run = wi.init()
+          ^^^^^^^^^
+  File "/home/aj3051/anaconda3/envs/backpack/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 812, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj3051/anaconda3/envs/backpack/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj3051/anaconda3/envs/backpack/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj3051/anaconda3/envs/backpack/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj3051/anaconda3/envs/backpack/lib/python3.11/threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj3051/anaconda3/envs/backpack/lib/python3.11/threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
