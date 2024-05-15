@@ -1,4 +1,0 @@
-  0%|                                                         | 0/105560 [00:00<?, ?it/s]Traceback (most recent call last):
-  File "/local/rcs/aj3051/equitune/train.py", line 138, in <module>
-    for epoch in num_epochs:  # Train for 5 epochs
-TypeError: 'int' object is not iterable
