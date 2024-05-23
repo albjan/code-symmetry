@@ -99,9 +99,9 @@ def main(args):
         data, [train_size, val_size, test_size]
     )
 
-    train_loader = torch.utils.data.DataLoader(train_set, batch_size=None, shuffle=False)
-    validation_loader = torch.utils.data.DataLoader(validation_set, batch_size=None, shuffle=False)
-    test_loader = torch.utils.data.DataLoader(test_set, batch_size=None, shuffle=False)
+    train_loader = torch.utils.data.DataLoader(train_set, batch_size=None)
+    validation_loader = torch.utils.data.DataLoader(validation_set, batch_size=None)
+    test_loader = torch.utils.data.DataLoader(test_set, batch_size=None)
 
     class CodePermutationEquitune(nn.Module): 
 
