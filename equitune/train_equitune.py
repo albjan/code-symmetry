@@ -20,21 +20,24 @@ def parse_args(args):
     parser = argparse.ArgumentParser()
     parser.add_argument('--eval_every', type=int, default=2000)
     parser.add_argument('--save_every', type=int, default=10000)
-    parser.add_argument('--lr', type=float, default=1e-4)
+    parser.add_argument('--lr', type=float, default=1e-5)
     parser.add_argument('--num_epochs', type=int, default=4)
-    parser.add_argument('--wandb', type=bool, default=True)
-    parser.add_argument('--data_path', type=str, default="/home/albertjan/equitune/data/dataset_4perms.pkl")
-    parser.add_argument('--save_dir', type=str, default='/home/albertjan/equitune/code-symmetry/results/equitune/')
-    parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument('--wandb', action='store_true') 
+    parser.add_argument('--data_path', type=str, default="/home/albertjan/equitune/data/dataset_4perms_function_insertion_preprocessed.pkl")
+    parser.add_argument('--save_dir', type=str, default="/home/albertjan/equitune/code-symmetry/results/equitune/")
+    parser.add_argument("--seed", type=int, default=1337)
+    parser.add_argument("--cpu", action="store_true")
+    
     args = parser.parse_args()   
     return args 
 
 
 def main(args):
-
     @torch.no_grad()
     def evaluate_model(dataset, dataloader):
         total_loss = 0
+        correct_samples = 0
+        total_samples = 0
         for batch in dataloader:
             input_ids, label, metadata = batch["input_ids"], batch["label"], batch["metadata"]
             input_ids = input_ids.to(device)
@@ -44,10 +47,15 @@ def main(args):
                 loss = loss_fn(output, label)
 
             total_loss += loss.item()
-        total_loss = total_loss / len(dataloader)
-        return total_loss
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            _, predicted = torch.max(output, 1)
+            correct_samples += (predicted == label).sum().item()
+            total_samples += label.shape[0]
+        total_loss = total_loss / len(dataloader)
+        accuracy = correct_samples / total_samples
+        return total_loss, accuracy 
+
+    device = torch.device("cuda" if torch.cuda.is_available() and not args.cpu else "cpu")
     torch.manual_seed(args.seed)
 
     # Initialize wandb
@@ -55,7 +63,7 @@ def main(args):
         run = wandb.init(
             reinit=True,
             project="equitune",
-            name="Equitune Train 1",
+            name="Equitune Train 3",
             config={
                 "learning_rate": args.lr,
                 "epochs": args.num_epochs,
@@ -99,9 +107,9 @@ def main(args):
         data, [train_size, val_size, test_size]
     )
 
-    train_loader = torch.utils.data.DataLoader(train_set, batch_size=None)
-    validation_loader = torch.utils.data.DataLoader(validation_set, batch_size=None)
-    test_loader = torch.utils.data.DataLoader(test_set, batch_size=None)
+    train_loader = torch.utils.data.DataLoader(train_set, batch_size=None, shuffle=True)
+    validation_loader = torch.utils.data.DataLoader(validation_set, batch_size=None, shuffle=True)
+    test_loader = torch.utils.data.DataLoader(test_set, batch_size=None, shuffle=True)
 
     class CodePermutationEquitune(nn.Module): 
 
@@ -111,8 +119,8 @@ def main(args):
             self.num_permutations = num_permutations
             module_dict = dict(self.base_model.named_modules())
 
-            second_to_last_attn_layer = module_dict['model.layers.22']
-            second_to_last_attn_layer.register_forward_hook(self.permute_output_hook)
+            # second_to_last_attn_layer = module_dict['model.layers.22']
+            # second_to_last_attn_layer.register_forward_hook(self.permute_output_hook)
 
             last_attn_layer = module_dict['model.layers.23']
             last_attn_layer.register_forward_hook(self.average_output_hook)
@@ -159,6 +167,9 @@ def main(args):
 
     for epoch in range(args.num_epochs):  
         total_loss = 0
+        correct_samples = 0
+        total_samples = 0 
+
         for batch in train_loader:
         # for epoch_i, batch in enumerate(sorted(train_loader, key=lambda x: x["input_ids"].shape[1], reverse=True)):
             input_ids, label, metadata = batch["input_ids"], batch["label"], batch["metadata"]
@@ -171,14 +182,18 @@ def main(args):
             with torch.autocast(device_type="cuda"):
                 output = equitune_model(input_ids, metadata)
                 loss = loss_fn(output, label)
+
+            _, predicted = torch.max(output, 1)
+            correct_samples += (predicted == label).sum().item()
+            total_samples += label.shape[0]
             
             if args.wandb: wandb.log({"training loss": loss.item()}, step=step) 
             step += 1
             total_loss += loss.item()
             
             if step % args.eval_every == 0:
-                val_loss = evaluate_model(validation_set, validation_loader)
-                if args.wandb: wandb.log({"validation loss": val_loss}, step=step)
+                val_loss, val_accuracy = evaluate_model(validation_set, validation_loader)
+                if args.wandb: wandb.log({"validation loss": val_loss, "validation accuracy": val_accuracy}, step=step)
             
             if step % args.save_every == 0:
                 save_path = os.path.join(args.save_dir, f"model_{step}")
@@ -193,11 +208,12 @@ def main(args):
             optimizer.step()
 
         total_loss = total_loss / len(train_loader)
-        if args.wandb: wandb.log({"epoch training loss": total_loss}, step=step)
+        accuracy = correct_samples / total_samples
+        if args.wandb: wandb.log({"epoch training loss": total_loss, "epoch accuracy": accuracy}, step=step)
 
-    test_loss = evaluate_model(test_set, test_loader)
+    test_loss, test_accuracy = evaluate_model(test_set, test_loader)
     save_path = os.path.join(args.save_dir, "final_model")
-    if args.wandb: wandb.log({"final_test_loss": test_loss}, step=step)
+    if args.wandb: wandb.log({"final_test_loss": test_loss, "final_test_accuracy": test_accuracy}, step=step)
     torch.save({
         'epoch': epoch, 
         'model_state_dict': equitune_model.state_dict(),
@@ -208,3 +224,4 @@ def main(args):
 if __name__ == "__main__":
     args = parse_args(None)
     main(args)
+
